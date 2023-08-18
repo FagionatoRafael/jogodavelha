@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jogodavelha/View/cara_ou_coroa.dart';
 import 'package:jogodavelha/View/tic_tac_toe_view.dart';
 
 class Home extends StatefulWidget {
@@ -19,7 +20,11 @@ class _HomeState extends State<Home> {
           ElevatedButton(
               onPressed: () => Navigator.push(context,
                 MaterialPageRoute(builder: (context) => const TicTacToeView()),),
-              child: Text('Jogo da Velha'))
+              child: Text('Jogo da Velha')),
+          ElevatedButton(
+              onPressed: () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const CaraOuCoroa()),),
+              child: Text('Cara Ou Coroa'))
         ],
       )
     );
