@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jogodavelha/View/cara_ou_coroa.dart';
+import 'package:jogodavelha/View/pedra_papel_tesoura.dart';
 import 'package:jogodavelha/View/tic_tac_toe_view.dart';
 
 class Home extends StatefulWidget {
@@ -16,7 +17,6 @@ class _HomeState extends State<Home> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Muitos Jogos'),
           ElevatedButton(
               onPressed: () => Navigator.push(context,
                 MaterialPageRoute(builder: (context) => const TicTacToeView()),),
@@ -24,7 +24,11 @@ class _HomeState extends State<Home> {
           ElevatedButton(
               onPressed: () => Navigator.push(context,
                 MaterialPageRoute(builder: (context) => const CaraOuCoroa()),),
-              child: Text('Cara Ou Coroa'))
+              child: Text('Cara Ou Coroa')),
+          ElevatedButton(
+              onPressed: () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const PedraPapelTesoura()),),
+              child: Text('Pedra, Papel e Tesoura'))
         ],
       )
     );

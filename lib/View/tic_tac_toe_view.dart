@@ -92,10 +92,6 @@ class _TicTacToeViewState extends State<TicTacToeView> {
             InkWell(
               onTap: () {
                 Navigator.pop(context);
-                // Navigator.pushReplacement(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => const Home()),
-                // );
               },
               child: Padding(
                 padding: EdgeInsets.only(top: 8.0),
